@@ -29,5 +29,10 @@ public class Target : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
+
+        if (gameObject.CompareTag("Bad"))
+        {
+            Time.timeScale = 0f;
+        }
     }
 }
